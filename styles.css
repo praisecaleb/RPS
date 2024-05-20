@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;     
+}
+body{
+    background-color: burlywood;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    height: 50px;
+    cursor: pointer;
+    width: 120px;
+    margin-top: 140px;
+    border-radius: 20px;
+    font-size: 25px;
+    font-family: monospace;
+    background-color: brown;
+}
+.score{
+    height: 270px;
+    width: 70%;
+    background-color: wheat;
+    margin-left: 170px;
+    margin-top:70px;
+    cursor : pointer;
+    display: flex;
+    justify-content: space-evenly;
+}
+:hover .score{
+    transform: translate(x);
+    transition: ease-in-out 3s linear;
+    
+}
+p{
+    font-size: 35px;
+    font-weight: 500;
+}
+.a,.b,.c{
+    text-align: center;
+    margin-left: 150px;
+}
+.clear{
+    height: 50px;
+    width: 120px;
+    background-color: brown;
+    border-radius: 25px;
+    font-family: monospace;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 7px;
+    border: 2px solid black;
+    margin-left: 550px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+.alert{
+    height: 70px;
+    width: 700px;
+    background-color: wheat;
+    margin-top: 150px;
+    margin-right: 90px;
+    position: relative;
+    right: 290px;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 10px;
+}
+@media only screen and (max-width:700px){
+    body{
+        overflow: hidden;
+    }
+    button{
+        overflow: hidden;
+        width: 90px;
+        margin-right: 50px;
+        margin-top: 22%;
+    }
+    .rock{
+        position: relative;
+
+    }
+    .page{
+        position: relative;
+        right: 23px;
+    }
+    .ceaser{
+        position: relative;
+        right: 52px;
+    }
+    .score{
+        position: relative;
+        right: 160px;
+        height: 150px;
+        margin-top: 100px;
+    }
+    .clear{
+        position: relative;
+        right: 450px;
+    }
+    .a{
+        position: relative;
+        right: 140px;
+        font-size: 30px;
+    }
+    .b{
+        position: relative;
+        right: 253px;
+        font-size: 30px;
+    }
+    .c{
+        position: relative;
+        right: 370px;
+        font-size: 30px;
+    }
+    .clear{
+        padding: 0;
+    }
+}
